@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "525929c6c406add7e8a9abd030db5227",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "izisaurio/inn-response",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/izisaurio/inn-response.git",
+                "reference": "712009475a0c5580578c35c28c2a5cc99fd451fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/izisaurio/inn-response/zipball/712009475a0c5580578c35c28c2a5cc99fd451fa",
+                "reference": "712009475a0c5580578c35c28c2a5cc99fd451fa",
+                "shasum": ""
+            },
+            "require-dev": {
+                "smarty/smarty": "^v4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Inn\\Response\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "izisaurio",
+                    "email": "izi.isaac@gmail.com"
+                }
+            ],
+            "description": "A collection of simple PHP response helpers",
+            "support": {
+                "issues": "https://github.com/izisaurio/inn-response/issues",
+                "source": "https://github.com/izisaurio/inn-response/tree/1.0.1"
+            },
+            "time": "2022-04-02T22:48:40+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
