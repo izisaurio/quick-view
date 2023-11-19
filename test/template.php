@@ -10,6 +10,6 @@
     <?= $_draw('drawable.php') ?>
 
     <div>
-        Icon: <?= $_print('icon.svg') ?>
+        Icon: <?= $_draw('icon.svg') ?>
     </div>
 </body>
