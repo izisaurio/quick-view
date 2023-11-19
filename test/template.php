@@ -8,4 +8,8 @@
         Created by <?= $name ?><<?= $mail ?>>
     </div>
     <?= $_draw('drawable.php') ?>
+
+    <div>
+        Icon: <?= $_print('icon.svg') ?>
+    </div>
 </body>

@@ -40,6 +40,7 @@ class View
 			[
 				'_attrs' => [$this, 'attrs'],
 				'_draw' => [$this, 'draw'],
+				'_print' => [$this, 'print'],
 				'_e' => 'htmlspecialchars',
 			],
 			$bag
@@ -87,6 +88,20 @@ class View
 	public function draw($path, array $bag = [])
 	{
 		return new self($path, $bag);
+	}
+
+	/**
+	 * Print another file contents to this template, usabel on template as '$_print'
+	 * 	 
+	 * @access  public
+	 * @param   string  $path   File path
+	 * @return  string
+	 */
+	public function print($path) {
+		if (!file_exists($this->path)) {
+			throw new FileNotFoundException($this->path);
+		}
+		return file_get_contents($path);
 	}
 
 	/**
