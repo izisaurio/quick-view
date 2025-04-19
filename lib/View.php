@@ -86,7 +86,8 @@ class View
 	 */
 	public function draw($path, array $bag = [])
 	{
-		if (\pathinfo($path, PATHINFO_EXTENSION) === 'php') {
+		$extension = \pathinfo($path, PATHINFO_EXTENSION);
+		if (in_array($extension, ['php', 'phtml'])) {
 			return new self($path, $bag);
 		}
 		if (!file_exists($this->path)) {
